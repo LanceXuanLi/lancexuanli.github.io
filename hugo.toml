@@ -1,4 +1,47 @@
-baseURL = 'https://blog.nanxlab.com/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'PaperMod'
+baseURL = "https://blog.nanxlab.com/"
+title = "Nanxuan Codes & Life"
+theme = "PaperMod"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+
+[params]
+  description = "Sharing programming and reflections"
+  author = "Nanxuan Li"
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Nanxuan"
+    Content = "Welcome to my blog, where I write about tech insights and life."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/LanceXuanLi"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:lance.nanxuanli+blog@gmail.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
